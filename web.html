@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulhadi Asa'd - Personal Projects</title>
+    <style>
+        body {
+            font-family: Cambria;
+            margin: 0;
+          font-size:30px;
+          text-align: justify;
+            padding: 0;
+            background-color: #531516;
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+            color:#ece0d1;
+        }
+
+header {
+            background-color: #12151c;
+            color: #ece0d1;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #661b1c;
+            padding: 0.5em;
+            
+        }
+
+        section.projects h3 {
+            width: 100%; /* Ensure the heading takes full width */
+            text-align: center; /* Center the heading */
+        }
+
+        section.projects .project-info {
+            max-width: 100%; /* Adjust the width of the text content */
+            margin-right: 20px; /* Add space between text and media elements */
+            margin-bottom: 20px; /* Add space below the text */
+        }
+        
+        nav a {
+            color: #ece0d1;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.25em;
+        }
+
+        section {
+            padding: 1em;
+            margin-top: 50px; /* Add some space at the top of each section */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        section img, section video {
+            max-width: 100%; /* Adjust the width of images and videos */
+            border-radius: 8px; /* Optional: Add a border radius to the media elements */
+            margin-bottom: 10px; /* Add space between media elements */
+        }
+
+        section div {
+            max-width: 50%; /* Adjust the width of the text content */
+        }
+
+        section.projects {
+            flex-direction: column; /* Display projects in a column */
+            align-items: flex-start; /* Align projects to the start */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        section.projects h3 {
+            text-align: center; /* Center the heading */
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project-info {
+            max-width: 100%; /* Adjust the width of the text content */
+            margin-bottom: 20px; /* Add space below the text */
+        }
+
+        .media-container {
+            max-width: 100%; /* Adjust the width of the media content */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Add space between photos */
+        }
+
+        .media-container img{
+            flex: 0 0 calc(50% - 10px); /* Three photos per row with gap */
+            max-width: calc(50% - 10px); /* Three photos per row with gap */
+            border-radius: 8px; /* Optional: Add a border radius to the photos */
+            width: 100%; /* Ensure images and videos take full width */
+            margin-bottom: 10px; /* Add space between media elements */
+            float:left;
+        }
+        .media-container video {
+            width: 100%; /* Ensure images and videos take full width */
+            border-radius: 8px; /* Optional: Add a border radius to the media elements */
+            margin-bottom: 10px; /* Add space between media elements */
+            flex: 0 0 calc(50% - 10px); /* Three photos per row with gap */
+            max-width: calc(50% - 10px); /* Three photos per row with gap */
+            border-radius: 8px; /* Optional: Add a border radius to the photos */
+            float:left;
+        }
+
+        .media-container p {
+            margin-bottom: 10px; /* Add space between media elements */
+            flex: 0 0 calc(100% - 10px); /* Three photos per row with gap */
+            max-width: calc(100% - 10px); /* Three photos per row with gap */
+            border-radius: 8px; /* Optional: Add a border radius to the photos */
+            float:left;
+        }
+        
+        table {
+  table-layout: fixed ;
+  width: 100% ;
+  border-spacing: 10px;
+}
+td {
+  width: 25% ;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abdulhadi Asa'd</h1>
+        <p>Personal Projects</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <section id="home">
+        <div>
+            <h2>Welcome to My Personal Projects Website</h2>
+          <p> This website focuses mainly on the major arduino projects that I have made throughout the years and is continuously updated as I come up with more and more ideas for different projects. All projects include a brief explanation of the project, pictures of the circuit design, a video of it working, and the code I wrote to get it to work. </p>
+
+        </div>
+        <img style="width: 45%;" src="Arduino_Logo.jpg" alt="Home Image"> <!-- Replace with the actual image path -->
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>I have always been interested in electronics and seeing how hardware and software integrate together to make things like a calculator or computer. This is why, in grade 10 I decided to buy an arduino kit and have been making personal projects on it since then. I have been working on personal arduino projects since the tenth grade and have been documenting my progress on this website.</p>
+        </div>
+        <img style = "width: 40%;"src="IMG_5691.jpg" alt="About Me Image"> <!-- Replace with the actual image path -->
+    </section>
+
+<section id="projects" class="projects">
+        <h2>Projects</h2>
+  
+  
+        <h3>Alarm Clock</h3>
+        <table>
+            <td>
+                <p>The following project is an alarm clock I made using an LED display, an IR receiver, and an active buzzer.</p>
+
+            </td>
+            
+            <td><div class="media-container">
+
+                <video width="400" controls>
+                    <source src="img-8349_zC6UptIq.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="400" controls>
+                    <source src="img_8350.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <img src="IMG_8342.JPG" alt="Alarm Clock Photo 1">
+                <img src="IMG_8344.jpg" alt="Alarm Clock Photo 3">
+            </td>
+
+        </div>
+        </table>
+            
+              
+  
+  
+  <h3>Calculator</h3>
+  <table>
+    <td>
+        <p>The following project is a calculator. This project was one of the first ones I undertook as I was interested in trying to replicate a real world device.</p>
+
+    </td>
+    
+    <td><div class="media-container">
+
+        <video width="300" controls>
+            <source src="img-8379_u7SyReT7.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img style="width: 45%;" src="IMG_8374.JPG" alt="Calculator Photo 1">
+        <img style="width:45%;" src="IMG_8375.jpg" alt="Calculator Photo 2">
+        <img style="width:45%;" src="IMG_8376.jpg" alt="Calculator Photo 3">
+    </td></div>
+</table>
+  
+  
+  
+  
+  
+  <h3>Color Memory Game</h3>
+  <table>
+    <td>
+        <p>The following project is a memory game that requires the user to remember the sequence with which the LEDs lit up and then press the switches in that order. The number of LEDs that light up increases by one each time. This was inspired by the Simon Game.</p>
+
+    </td>
+    
+    <td><div class="media-container">
+
+        <video width="300" controls>
+            <source src="IMG_8496.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img style="width: 45%;" src="IMG_8491.JPG" alt="Color Memory Game Photo 1">
+        <img style="width:45%;" src="IMG_8492.jpg" alt="Color Memory Game Photo 2">
+        <img style="width:45%;" src="IMG_8494.jpg" alt="Color Memory Game Photo 3">
+    </td>
+</div>
+</table>
+  
+  
+  
+  
+  
+  
+  
+  <h3>Motion Sensor</h3>
+  <table>
+    <td>
+        <p>The following project is a mechanism that is meant to detect when something is within a certain distance of it and light up two LEDs when it is close enough. It also makes a sound depending on how close it is. This is done using an HC-SR04 Ultrasonic sensor to detect the distance, as well as LEDs and an active buzzer.</p>
+    </td>
+    
+    <td>
+        <div class="media-container">
+        <video width="260" controls>
+            <source src="IMG_8319.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img style="width: 50%;" src="IMG_8303.JPG" alt="Motion Sensor Photo 1">
+        <img style="width:45%;" src="IMG_8304.jpg" alt="Motion Sensor Photo 2">
+        <img style="width:45%;" src="IMG_8305.jpg" alt="Motion Sensor Photo 3">
+    </td>
+</div>
+</table>
+  
+  
+
+  
+  
+  
+<h3>Number Memory Game</h3>
+  <table>
+    <td>
+        <p>This project incorporates an LED display to display randomly generated numbers that increase by 1 digit each time for a short period of time. The input of the user is read by the IR reciever and displayed on the LED screen. This was inpired by the number memory game in Human Benchmark.</p>
+    </td>
+    
+    <td>
+        <div class="media-container">
+        <video width="300" controls>
+            <source src="IMG_8519.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img style="width: 38%;" src="IMG_8511.JPG" alt="Number Memory Game Photo 1">
+        <img style="width:45%;" src="IMG_8514.jpg" alt="Number Memory Game Photo 2">
+        <img style="width:42%;" src="IMG_8512.jpg" alt="Number Memory Game Photo 3">
+    </td>
+</div>
+</table>
+  
+  
+  
+  
+
+  <h3>Reaction Time Tester</h3>
+  <table>
+    <td>
+        <p>The following project incorporates an LED display screen to set up a random value on the remote. The user then has a set amount of time to input the value. The LED screen also keeps track of their strike on the bottom display. This game was inspired by the reaction time test on human benchmark.</p>
+    </td>
+    
+    <td>
+        <div class="media-container">
+        <video width="300" controls>
+            <source src="IMG_8467.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img style="width: 38%;" src="IMG_8456.JPG" alt="Reaction Time Tester Photo 1">
+        <img style="width:45%;" src="IMG_8455.jpg" alt="Reaction Time Tester Photo 2">
+        <img style="width:42%;" src="IMG_8454.jpg" alt="Reaction Time Tester Photo 3">
+    </td>
+</div>
+</table>
+  
+  
+  
+  
+
+  <h3>Automatic Container Closer</h3>
+  <table>
+    <td>
+        <p>The following project uses a sound sensor and a servo to automatically close the led on my piggybank (cup) as soon as it hears a coin fall in. A switch is used to open the lid again.</p>
+    </td>
+    
+    <td>
+        <div class="media-container">
+        <video width="300" controls>
+            <source src="IMG_9266.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img style="width: 38%;" src="IMG_0495.JPG" alt="Automatic Container Closer Photo 1">
+        <img style="width:45%;" src="IMG_0496.JPG" alt="Automatic Container Closer Photo 2">
+        <img style="width:42%;" src="IMG_0497.JPG" alt="Automatic Container Closer Photo 3">
+    </td>
+</div>
+</table>
+  
+  
+  
+
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <footer>
+        <p>Contact me at: abdulhadi.asad@yahoo.ca</p>
+    </footer>
+</body>
+</html>
+
